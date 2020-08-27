@@ -1,57 +1,106 @@
-#menu {
-    position: fixed;
-    height: 100%;
-    background-color: #191818;
-    width: 150px;
-    left: 0;
+/*==style cơ bản cho website==*/
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color:#333;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color:#3b8bba;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+a:hover, a:visited {
+    color: #265778;
+}
+/*==chia cột website==*/
 #container {
     padding-left: 150px;
     position: relative;
-    left: 0;
+    left:0;
     width: 100%;
-   }
-#menu ul{
+}
+#menu {
+    position: fixed;
+    height: 100%;
+    background-color: #111111;
+    left:0;
+    width: 150px;
+}
+/*==menu==*/
+#menu ul {
+    list-style-type: none;
     padding: 0;
     margin: 0;
-    list-style-type: none;
 }
-#menu ul li{
-    height: 2.9em;
-    line-height: 2.9em;
+#menu ul li {
+    line-height: 50px;
+    height: 50px;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
 }
-#menu li:hover{
-    background-color: wheat;
+#menu ul li a {
+    display: block;
+    padding: 0 1em;
+    border-bottom: 1px solid #fff;
 }
-#slogan {
-    color: #8997A0;
-    font-size: 0.8em;
-    text-align: center;
+#menu ul li:hover {
+    background-color: white;
 }
-#header{
-    text-align: center;
-}
+/*==content==*/
 #content {
     padding: 1em 8em;
- }
-#menu li a {
-    display: block;
-    color: #fff;
-    padding: 0 1em;
-    border-bottom: 1px solid #333;
 }
-p.content{
-    padding: 1.5em 20%;
-    background: #EFEFEF;
-    border: 1px solid#E8E8E8;
-}
-#footer {
-    font-size: 85%;
-    border-top: 1px solid #E6E6E6;
-    color: #838383;
-    padding: 1em 3em;
+#header, .call-to-action {
     text-align: center;
-   }
-.box1{
+}
+#logo > img {
+    width: 500px;
+    height: 200px;
+}
+#slogan {
+    font-size: 0.8em;
+    color: gray;
+}
+.call-to-action {
+    padding: 1em 20%;
+    background-color: gray;
+    border: 1px solid black;
+}
+/*==row==*/
+.row {
+    overflow: hidden;
+    margin: 1.5em auto;
+}
+.row .col {
     float: left;
+    width: 32%;
+    margin: .5%;
+    padding: .5%;
+}
+#box3 {
+    float: right;
+    margin-right: 0;
+}
+.row .col img {
+    float: left;
+}
+/*==footer==*/
+#footer {
+    text-align: right;
+}
+.col > img {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
 }
